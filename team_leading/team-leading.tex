@@ -13,18 +13,28 @@
 \usepackage{float}
 \usepackage{booktabs}     % professional tables
 \usepackage{parskip}
+\usepackage{color}
 
 % Support for including graphics
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-\title{Grand Report Title}
+\newcommand{\todo}[1]{
+	\colorbox{yellow}{
+		\begin{minipage}{15cm}
+			\textbf{TODO:}\\
+			#1
+		\end{minipage}
+	}
+}
 
-\author{John Doe, Robert Roe\\
+\title{Software team leadership in agile environments}
+
+\author{Alexandru-George BURGHELEA\\
 Faculty of Automatic Control and Computers\\
 University POLITEHNICA of Bucharest\\
 Splaiul Independenței 313, Bucharest, Romania, 060042 \\
-\emph{\{john.doe,robert.roe\}@cs.pub.ro}}
+\emph{alexandru.burghelea@cti.pub.ro}}
 
 \date{\today}
 
@@ -40,21 +50,25 @@ Splaiul Independenței 313, Bucharest, Romania, 060042 \\
 \label{sec:introduction}
 \input{src/introduction}
 
-\section{Architecture}
-\label{sec:architecture}
-\input{src/architecture}
+\section{Existing approaches}
+\label{sec:existingapproaches}
+\input{src/existingapproaches}
 
-\section{Implementation}
-\label{sec:implementation}
-\input{src/implementation}
+\section{Team stages}
+\label{sec:teamstages}
+\input{src/teamstages}
 
-\section{Experimental Setup}
-\label{sec:setup}
-\input{src/setup}
+\section{Team motivation and development}
+\label{sec:teamdevelopment}
+\input{src/teamdevelopment}
 
-\section{Scenarios and Results}
-\label{sec:results}
-\input{src/results}
+\section{Impediments in team leadership}
+\label{sec:impediments}
+\input{src/impediments}
+
+\section{Team leadership in other fields}
+\label{sec:otherfields}
+\input{src/otherfields}
 
 \section{Conclusion and Further Work}
 \label{sec:conclusion}
