@@ -1,13 +1,8 @@
 % vim: set tw=78 sts=2 sw=2 ts=8 aw et ai:
 
-\todo{Sa ai in vedere puncte slabe si puncte forte ale acestora si cum lucrarea ta prezinta moduri de imbunatatire}
-
 Software companies have different ways to organize their teams, each based on the development methodology they use, or better said based on their interpretation of the methodology.
 \subsection{Existing visions about team leaders}
 \label{sub-sec:existingvisionsaboutteamleaders}
-\todo {Describe how different organizations tackle team leadership}
-
-
 
 There are cases when the leadership of the team is usually done by the person who has the most technical experience, sometimes called as a \textbf{coding guru}. The reason why this kind of person is appointed as team leader is the fact that  the senior management needs a solid technical voice to represent the team in front of the client. On the other hand the most technical person may not be oriented on developing the skills of the team members and is usually focused only on delivering the project (often by a great effort on the coding part from his side)
 
@@ -82,8 +77,6 @@ The difference between a team leader and a technical leader is that the team lea
 The team leaders responsibility is coaching. This means that he has the role of helping the team make decisions instead of making them for the team. The main weapon of a team leader is empowerment. He lets the team steer the project and helps them solve differences by asking questions, not answering.
 
 \subsubsection{Scrum Master}
-\todo{Agile description of scrum master}
-
 The third flavour of leader is the Scrum Master. In comparison to the technical and team leader the Scrum Master does not necessarily need to have a technical background (although it is not uncommon for the Scrum Master to be a former programmer or to be part of the development team). The Scrum Master is more of a process orchestrator.
 
 The Scrum Master has two main responsibilities:
@@ -98,6 +91,49 @@ A Scrum Master will observe the team processes and will provide improvements to 
 The Scrum Master does not provide technical support, but ensures that the team communicates constantly and facilitate meetings. By taking this onto himself he ensures that the team is not interrupted from the technical tasks.
 
 \subsection{Leader-Follower model vs Leader-Leader model}
-\todo{Turn that ship around notes}
 
-\todo{small chapter exit}
+In team coordination the actions of the lead can be classified into two categories as follow:
+
+\begin{description}
+\item [Leader-Follower] - where the person in charge is responsible for all the decisions, while the team is responsible for implementing the leaders' decision
+\item [Leader-Leader] - where the person in charge empowers the team to make decisions, while he is more of a coach than decision maker.
+\end{description}
+
+The \textit{Leader-Follower} has his origin in the military field where the commanding officer gives an order and that order is cascaded down the chain of command to the soldiers that have the obligation to execute it without hesitation. 
+
+The U.S. Navy has a famous quote depicting the \textit{Leader-Follower} model:
+
+\begin{displayquote}
+Leadership is the art, science, or gift by which a person is enabled and privileged to direct the thought, plans, and actions of others in such manner as to obtain and command their obedience, their confidence, their respect and the loyal cooperation. \cite{fundamentals-of-naval-leadership}
+\end{displayquote}
+
+In other words this leadership model is about controlling people. While in the military this approach is mandatory to ensure a well oiled fighting unit, in the the software industry this model fails.IT professionals want to use their intelligence not just to implement features, they also want to influence the way features are implemented.
+
+The \textit{Leader-Leader} model is totally different from the \textit{Leader-Follower} model by the fact that the official leader from such a structure is obliged to ensure that he is not a single point of failure.
+
+Leadership is not some mystical quality that some possess and other do not.\cite{turn-that-ship-around}
+
+This model provides great improvements to both morale and effectiveness and it also makes the team stronger by providing three key features:
+\begin{enumerate}
+\item The official leader is not a single point of failure and can be easily replaced in case of urgency (eg: unscheduled absence, the leader leaves the company) by empowering the team to decide by themselves
+\item The members have a better morale by being allowed to decide what and how features are implementing, this proving that they are not seen just as \textit{coding monkeys} but they are decisions makers
+\item There are no dead times while waiting for the lead to decide before they can implement.
+\end{enumerate}
+
+The success of the leader using a \textit{leader-leader} was greatly emphasized by Andrei Piti\cb{s}:
+
+\begin{displayquote}
+A leader can be promoted only when someone he managed can take his place.
+\end{displayquote}
+
+If a leader has managed to develop the skills of his direct report enough so that they can decide by themselves without his intervention, he has managed to create a self-organizing team capable of solving their problems and impediments.
+
+Although in theory the \textit{Leader-Leader} model seems revolutionary and desired, in practice it has been observed that people will fear to make decisions if their position does not require it, thus being hard to implement it first time. On the other hand the \textit{Leader-Follower} model may seem despotic, but it is easier for a team to work in this manner, because they do not have to leave their comfort zone, but it can easily reach a stage where the members are bored by the lack of challenges.
+
+Before you chose what kind of leader you want to be and what kind of model to use, take into account Cockburn's cite:
+
+\begin{displayquote}
+If you do not know anything about human behaviour, you know very little about software development.
+\end{displayquote}
+
+Chose the right model based on the project constraints and the long term objectives.
