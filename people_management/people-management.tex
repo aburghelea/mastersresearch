@@ -1,0 +1,86 @@
+% vim: set tw=78 sts=2 sw=2 ts=8 aw et ai:
+\documentclass[12pt]{article}
+
+\usepackage[paper=a4paper, top=2cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+%\usepackage{hyperref}	  % use \url{http://$URL} or \href{http://$URL}{Name}
+\usepackage{underscore}	  % underscores need not be escaped
+\usepackage{subfigure}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{booktabs}     % professional tables
+\usepackage{parskip}
+\usepackage{color}
+\usepackage{combelow}
+\usepackage{csquotes}
+
+% Support for including graphics
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\newcommand{\todo}[1]{
+	\colorbox{yellow}{
+		\begin{minipage}{10cm}
+			\textbf{TODO:}\\
+			#1
+		\end{minipage}
+	}
+}
+
+\title{People Management in the IT industry}
+
+\author{Alexandru-George BURGHELEA\\
+Faculty of Automatic Control and Computers\\
+University POLITEHNICA of Bucharest\\
+Splaiul Independenței 313, Bucharest, Romania, 060042 \\
+\emph{alexandru.burghelea@cti.pub.ro}}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{src/abstract}
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+\input{src/introduction}
+
+\section{Existing approaches}
+\label{sec:existingapproaches}
+\input{src/existingapproaches}
+
+\section{Positioning inside the organizational structure of the company}
+\label{sec:positioning}
+\input{src/positioning}
+
+\section{Tools for people management}
+\label{sec:tools}
+\input{src/tools}
+
+\section{Impediments in people management}
+\label{sec:impediments}
+\input{src/impediments}
+
+\section{People management in other fields}
+\label{sec:otherfields}
+\input{src/otherfields}
+
+\section{Conclusion and Future Work}
+\label{sec:conclusion}
+\input{src/conclusion}
+
+\section*{Acknowledgment}
+\label{sec:acknowledgment}
+The author would like to thank R\u{a}zvan Deaconescu for his support on elaborating this report. Also special thanks go to Adrian Zaiu, Phillip Luppens and Roxana P\u{a}duraru for showing me different ways to lead and motivate teams.
+
+\bibliographystyle{abbrv}
+\bibliography{people-management}
+
+\end{document}
