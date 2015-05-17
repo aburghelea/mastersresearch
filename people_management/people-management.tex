@@ -16,6 +16,7 @@
 \usepackage{color}
 \usepackage{combelow}
 \usepackage{csquotes}
+\usepackage{siunitx}
 
 % Support for including graphics
 \usepackage{graphicx}
@@ -28,6 +29,11 @@
 			#1
 		\end{minipage}
 	}
+}
+
+\sisetup{
+  group-four-digits = true,
+  group-separator = {,}
 }
 
 \title{People Management in the IT industry}
