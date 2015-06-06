@@ -70,6 +70,48 @@ In \ref{fig:prae} the vertical axis (P-R) is called \textit{Scope of action} and
 
 Although there are a lot of questionnaires to determine the PRAE model for each person, the dominant and secondary trait can be easily determined by the language that a person uses. In \ref{table:prae} can be found a description of the strong points, weak points and language indicator according to each PRAE trait.
 
+In the IT industry I observed that in 50\% of cases the combination between dominant and secondary trait is formed from \textit{Analytical} and \textit{Results}. This kind of persons are real assets to a company that is already established and focusses more on quality and not on delivering new features using short deadlines. For continuing to add new value to a product a person that has a mix made from \textit{Results} and \textit{Energetic} person is needed. The biggest drawback I observed for this mix is that this kind of person easily looses it's focus if something new needs to be implement, thus starting to work on new things without analysing all the possible use-cases and delivering software that works only on positive scenarios.
+\subsection{RACI Matrix}
+\label{subsec:raci}
+Although not used on large scale in people management a responsibility assignment matrix can be used to help managers in guiding their employees in completing their objectives.
+RACI stands for:
+\begin{description}
+\item[Responsible] The person performing the task. In this case the employee having to complete an objective
+\item[Assist] A person that may help the responsible one in completing the task. It may be the manager or a third person with interest in finishing the said objective.
+\item[Consulted] A person that may help the responsible person in finishing his task. It usually is a person who already has some experience in the field.
+\item[Informed] The person to be update with the status or progress of the objective. This person is usually the manager who sets this objective.
+\end{description}
+An example of a RACI model can be seen in \cref{table:raciex}
+\begin{table}[h]
+  \centering
+  \caption{RACI example}
+    \begin{tabular}{ llllp{3cm}}
+    \toprule
+    & Employee & Manager & Team leader & Senior Colleague \\ \midrule
+    Objective 1 & R & I & - & C \\ \midrule
+    Objective 2 & R & - & I & C \\ \midrule
+    Objective 3 & R & I & C & A \\ \bottomrule
+    \end{tabular}
+    \label{table:raciex}
+\end{table}
+
+While I was a people manager, this matrix has proven to be very useful because we would decide in advance who and what would handle, and it always proved to be a point of reference during the objectives following stage, providing the set agreements, thus avoiding excuses like "I though that someone else would have to do this".
+\subsection{FAC Model}
+\label{subsec:fac}
+Feedback period is usually a delicate time, it rarely happens when an employee receives only positive feedback. During the evaluation period, a manager has to deliver his view on the employee performance and also the opinions of the colleagues of the evaluated person. 
+
+Seeing that a person will have to receive, sometimes manager apply a technique called \textit{feedback sandwiching} \cite{fbs}. The idea behind this technique is to give merge the positive and negative feedback in such a way that the employee receive good feedback, followed by corrective feedback and so on until it is finished. But this technique may take the employee on an emotional roller-coaster during feedback delivery, confusing him on what he has to do from now on. This combined with the fact that evaluations are done once every 6-12 months the delivery of the feedback may already be too late to correct.
+
+A better solution would be to give constant feedback, as soon as the employees actions require it, in a constructive manner without attacking the persons values while bringing in front the actions that need to be corrected. To do the \textbf{F}acts - \textbf{A}ctions - \textbf{C}orrections can be used. The \textit{FAC} model represents the fact that the context for the actions is put in place, the employee knowing from the start on what situations he is receiving feedback, what he did, what was the outcome and expectations, what he should have done and what are the corrections to be made.
+
+E.g.:
+`` On Monday evening \textit{(context)}, you have committed the code without compiling the application and causing the build plans to fail, thus blocking the deployment \textit{(facts and outcome)}, while we were expecting you to deploy the new version \textit{(desired actions)}, so the next time please double check that you code does not break the build. ''
+
+This ensures that the employee clearly understands what he did and what, was expected of him without generalizing and also hinting that his specific actions are taken into account, instead of his general way of working.
+
+
+As a manager tools are a good thing to have, so while starting a process with an employee, a RACI matrix can be developed, while taking into account his PRAE profile to help determine the way to interact and give periodic and constructive feedback can provide useful help in acquiring the end goal.
+
 \begin{table}[h]
   \centering
   \caption{PRAE breakdown details}
@@ -185,46 +227,3 @@ Although there are a lot of questionnaires to determine the PRAE model for each 
     \end{tabular}
     \label{table:prae}
 \end{table}
-\FloatBarrier
-
-In the IT industry I observed that in 50\% of cases the combination between dominant and secondary trait is formed from \textit{Analytical} and \textit{Results}. This kind of persons are real assets to a company that is already established and focusses more on quality and not on delivering new features using short deadlines. For continuing to add new value to a product a person that has a mix made from \textit{Results} and \textit{Energetic} person is needed. The biggest drawback I observed for this mix is that this kind of person easily looses it's focus if something new needs to be implement, thus starting to work on new things without analysing all the possible use-cases and delivering software that works only on positive scenarios.
-\subsection{RACI Matrix}
-\label{subsec:raci}
-Although not used on large scale in people management a responsibility assignment matrix can be used to help managers in guiding their employees in completing their objectives.
-RACI stands for:
-\begin{description}
-\item[Responsible] The person performing the task. In this case the employee having to complete an objective
-\item[Assist] A person that may help the responsible one in completing the task. It may be the manager or a third person with interest in finishing the said objective.
-\item[Consulted] A person that may help the responsible person in finishing his task. It usually is a person who already has some experience in the field.
-\item[Informed] The person to be update with the status or progress of the objective. This person is usually the manager who sets this objective.
-\end{description}
-An example of a RACI model can be seen in \cref{table:raciex}
-\begin{table}[h]
-  \centering
-  \caption{RACI example}
-    \begin{tabular}{ llllp{3cm}}
-    \toprule
-    & Employee & Manager & Team leader & Senior Colleague \\ \midrule
-    Objective 1 & R & I & - & C \\ \midrule
-    Objective 2 & R & - & I & C \\ \midrule
-    Objective 3 & R & I & C & A \\ \bottomrule
-    \end{tabular}
-    \label{table:raciex}
-\end{table}
-
-While I was a people manager, this matrix has proven to be very useful because we would decide in advance who and what would handle, and it always proved to be a point of reference during the objectives following stage, providing the set agreements, thus avoiding excuses like "I though that someone else would have to do this".
-\subsection{FAC Model}
-\label{subsec:fac}
-Feedback period is usually a delicate time, it rarely happens when an employee receives only positive feedback. During the evaluation period, a manager has to deliver his view on the employee performance and also the opinions of the colleagues of the evaluated person. 
-
-Seeing that a person will have to receive, sometimes manager apply a technique called \textit{feedback sandwiching} \cite{fbs}. The idea behind this technique is to give merge the positive and negative feedback in such a way that the employee receive good feedback, followed by corrective feedback and so on until it is finished. But this technique may take the employee on an emotional roller-coaster during feedback delivery, confusing him on what he has to do from now on. This combined with the fact that evaluations are done once every 6-12 months the delivery of the feedback may already be too late to correct.
-
-A better solution would be to give constant feedback, as soon as the employees actions require it, in a constructive manner without attacking the persons values while bringing in front the actions that need to be corrected. To do the \textbf{F}acts - \textbf{A}ctions - \textbf{C}orrections can be used. The \textit{FAC} model represents the fact that the context for the actions is put in place, the employee knowing from the start on what situations he is receiving feedback, what he did, what was the outcome and expectations, what he should have done and what are the corrections to be made.
-
-E.g.:
-`` On Monday evening \textit{(context)}, you have committed the code without compiling the application and causing the build plans to fail, thus blocking the deployment \textit{(facts and outcome)}, while we were expecting you to deploy the new version \textit{(desired actions)}, so the next time please double check that you code does not break the build. ''
-
-This ensures that the employee clearly understands what he did and what, was expected of him without generalizing and also hinting that his specific actions are taken into account, instead of his general way of working.
-
-
-As a manager tools are a good thing to have, so while starting a process with an employee, a RACI matrix can be developed, while taking into account his PRAE profile to help determine the way to interact and give periodic and constructive feedback can provide useful help in acquiring the end goal.
