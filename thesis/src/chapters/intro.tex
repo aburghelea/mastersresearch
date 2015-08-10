@@ -1,84 +1,19 @@
 \chapter{Introduction}
 \label{chapter:intro}
+In any industry, there is no one man team. Although there are situations where for amusement purposes a single person does in parallel all the activities of an entire/team band, the scope is always the same: entertainement. But to obtain performance, a team is necessary. The situation can be easily compared to the programing concepts of threads: you have more workers that do separate tasks, but they need to be somehow sincronized or coordinated. Teams are in theory the easiest way to increase the throughput, but where there are multiple persons there also are different opinions. Although the boss was the person in charge of controlling and setting the direction, the position now shifts to leadership where control is relinquesed and direction is hinted.
 
-\textbf{This is just a demo file. It should not be used as a sample for a thesis.}\\
-\todo{Remove this line (this is a TODO)}
+Leadership is present in most of the posible environments and industries, but the one that I find most interesting is the IT industry. The reason behind the interest is the fact that the IT industry is considered a spoiled industry. A spoiled industry is described as being an industry where the average salary packages are above (at least 3 to 4 times) the average salary in a country and where the number of open positions is higher than the number of possible candidates. Two companies that I have interracted with (names undisclosable) reported that the number of accepted employment offers is between 50-60\% of the total of extended offers. 
 
-\section{Project Description}
-\label{sec:proj}
+In the situation when it is hard to find new employees it becomes mandatory to have a high retention rate. Due to this fact, IT companies have started to use people management techniques in order to maintain the existing employees happy and performant.
 
-\subsection{Project Scope}
-\label{sub-sec:proj-scope}
+\section{Team leader}
+\label{sec:tl}
+\cite{abur-tl}
+\section{People management}
+\label{sec:proj-scope}
+\cite{abur-pm}
+\section{Motivation}
+\label{sec:motivation}
 
-This thesis presents the \textbf{\project}.
-
-This is an example of a footnote \footnote{\url{www.google.com}}. You can see here a reference to \labelindexref{Section}{sub-sec:proj-objectives}.
-
-Here we have defined the CS abbreviation.\abbrev{CS}{Computer Science} and the UPB abbreviation.\abbrev{UPB}{University Politehnica of Bucharest}
-
-The main scope of this project is to qualify xLuna for use in critical systems.
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam lectus vel orci malesuada accumsan. Sed lacinia egestas tortor, eget tristiqu dolor congue sit amet. Curabitur ut nisl a nisi consequat mollis sit amet quis nisl. Vestibulum hendrerit velit at odio sodales pretium. Nam quis tortor sed ante varius sodales. Etiam lacus arcu, placerat sed laoreet a, facilisis sed nunc. Nam gravida fringilla ligula, eu congue lorem feugiat eu.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam lectus vel orci malesuada accumsan. Sed lacinia egestas tortor, eget tristiqu dolor congue sit amet. Curabitur ut nisl a nisi consequat mollis sit amet quis nisl. Vestibulum hendrerit velit at odio sodales pretium. Nam quis tortor sed ante varius sodales. Etiam lacus arcu, placerat sed laoreet a, facilisis sed nunc. Nam gravida fringilla ligula, eu congue lorem feugiat eu.
-
-
-\subsection{Project Objectives}
-\label{sub-sec:proj-objectives}
-
-We have now included \labelindexref{Figure}{img:report-framework}.
-
-\fig[scale=0.5]{src/img/reporting-framework.pdf}{img:report-framework}{Reporting Framework}
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam lectus vel orci malesuada accumsan. Sed lacinia egestas tortor, eget tristiqu dolor congue sit amet. Curabitur ut nisl a nisi consequat mollis sit amet quis nisl. Vestibulum hendrerit velit at odio sodales pretium. Nam quis tortor sed ante varius sodales. Etiam lacus arcu, placerat sed laoreet a, facilisis sed nunc. Nam gravida fringilla ligula, eu congue lorem feugiat eu.
-
-We can also have citations like \cite{iso-odf}.
-
-\subsection{Related Work}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam lectus vel orci malesuada accumsan. Sed lacinia egestas tortor, eget tristiqu dolor congue sit amet. Curabitur ut nisl a nisi consequat mollis sit amet quis nisl. Vestibulum hendrerit velit at odio sodales pretium. Nam quis tortor sed ante varius sodales. Etiam lacus arcu, placerat sed laoreet a, facilisis sed nunc. Nam gravida fringilla ligula, eu congue lorem feugiat eu.
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam lectus vel orci malesuada accumsan. Sed lacinia egestas tortor, eget tristiqu dolor congue sit amet. Curabitur ut nisl a nisi consequat mollis sit amet quis nisl. Vestibulum hendrerit velit at odio sodales pretium. Nam quis tortor sed ante varius sodales. Etiam lacus arcu, placerat sed laoreet a, facilisis sed nunc. Nam gravida fringilla ligula, eu congue lorem feugiat eu.
-
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam lectus vel orci malesuada accumsan. Sed lacinia egestas tortor, eget tristiqu dolor congue sit amet. Curabitur ut nisl a nisi consequat mollis sit amet quis nisl. Vestibulum hendrerit velit at odio sodales pretium. Nam quis tortor sed ante varius sodales. Etiam lacus arcu, placerat sed laoreet a, facilisis sed nunc. Nam gravida fringilla ligula, eu congue lorem feugiat eu.
-
-We are now discussing the \textbf{Ultimate answer to all knowledge}.
-This line is particularly important it also adds an index entry for \textit{Ultimate answer to all knowledge}.\index{Ultimate answer to all knowledge}
-
-\subsection{Demo listings}
-
-We can also include listings like the following:
-
-% Inline Listing example
-\lstset{language=make,caption=Application Makefile,label=lst:app-make}
-\begin{lstlisting}
-CSRCS = app.c
-SRC_DIR =..
-include $(SRC_DIR)/config/application.cfg
-\end{lstlisting}
-
-Listings can also be referenced. References don't have to include chapter/table/figure numbers... so we can have hyperlinks \labelref{like this}{lst:makefile-test}.
-
-\subsection{Tables}
-
-We can also have tables... like \labelindexref{Table}{table:reports}.
-
-\begin{center}
-\begin{table}[htb]
-  \caption{Generated reports - associated Makefile targets and scripts}
-  \begin{tabular}{l*{6}{c}r}
-    Generated report & Makefile target & Script \\
-    \hline
-    Full Test Specification & full_spec & generate_all_spec.py  \\
-    Test Report & test_report & generate_report.py  \\
-    Requirements Coverage & requirements_coverage &
-    generate_requirements_coverage.py   \\
-    API Coverage & api_coverage & generate_api_coverage.py  \\
-  \end{tabular}
-  \label{table:reports}
-\end{table}
-\end{center}
+\section{Objectives}
+\label{sec:Objectives}
