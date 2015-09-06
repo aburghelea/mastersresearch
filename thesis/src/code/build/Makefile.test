@@ -1,22 +1,20 @@
-# Makefile containing targets specific to testing
-
-TEST_CASE_SPEC_FILE=full_test_spec.odt
-API_COVERAGE_FILE=api_coverage.csv
-REQUIREMENTS_COVERAGE_FILE=requirements_coverage.csv
-TEST_REPORT_FILE=test_report.odt
-
-
-# Test Case Specification targets
-
-.PHONY: full_spec
-full_spec: $(TEST_CASE_SPEC_FILE)
-	@echo
-	@echo "Generated full Test Case Specification into \"$^\""
-	@echo "Please remove manually the generated file."
-
-.PHONY: $(TEST_CASE_SPEC_FILE)
-$(TEST_CASE_SPEC_FILE):
-	$(TEST_ROOT)/common/tools/generate_all_spec.py --format=odt -o $@ $(TEST_ROOT)/functional-tests $(TEST_ROOT)/performance-tests $(TEST_ROOT)/robustness-tests
-#
-
-# ...
+What kind of leadership position are you ?(Technical leader, Team coach, People managers) -- provide descriptions for all
+What is the size of the team you are reading ? -- provide the answers based on the experiences with this team
+What is the lifespan of the team?
+Do you know each member in person and how he thinks? If not how do do you plan to obtain this information?
+What phase is the team in? (day-to-day, evolution, self-organizing) -- provide the descriptions of the phases based on Notes to a software team leader
+If you suddenly leave the team for a 2-4 week period, will it do better, worse or maintain the performance?
+How can you teach your team not to fear failure?
+What tasks can you delegate and to what type of colleagues?
+Does your team have enough time to learn during work hours?
+Are you unintentionally solving the teams problems instead of teaching them how to do it?
+How do you adapt your attitude and language based on the interlocutors?
+What is the best motivator that you use?
+How do you increase the morale of your employees?
+What are the tools that you rely on in your managerial activities?
+How do you make the decision to fire someone?
+What do you do before firing someone?
+What was your biggest failure?
+What was your greatest success?
+How are you coaching your reports?
+How are you managing the slacker and martyr toxic employees? -- provide the description of the slacker and martyr.

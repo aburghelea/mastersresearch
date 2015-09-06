@@ -241,7 +241,7 @@
 
 % suport for subfloats
 \usepackage{subfig}
-
+\usepackage{booktabs}
 % booktabs (professional tables)
 \usepackage{booktabs}
 
