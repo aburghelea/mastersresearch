@@ -11,11 +11,19 @@
 { \usetheme{Rochester} }
 
 
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+
+
 \title{Management Styles in IT}
 \subtitle{Team Leadership Versus People Management}
 \author{Alexandru-George Burghelea \newline
   \textbf{Supervisor}: \cb{S}l. dr. ing. R\u{a}zvan Deaconescu}
-
+  
 \begin{document}
 
 \frame{\titlepage}
@@ -23,13 +31,14 @@
 \begin{frame}{Existing approaches}
 Studied management flavors
 \begin{description}
-  \item [People Manager] - Soft skilled mentor (3 candidates)
-  \item [Technical Leader] - Coding guru, enforcer (7 candidates)
-  \item [Team Coach] - Mentor and motivator, mix between PM and TC (4 candidates)
+\uncover<1->{\item [People Manager] - Soft skilled mentor (3 candidates)} 
+\uncover<2->{  \item [Technical Leader] - Coding guru, enforcer (7 candidates)}
+\uncover<3->{\item [Team Coach] - Mentor and motivator, mix between PM and TC (4 candidates)}
   
 \end{description}
 \end{frame}
 
+\iffalse
 \begin{frame}{Expectations}
 \begin{itemize}
 \item Give direction, coordinate, ensure delivery
@@ -38,6 +47,7 @@ Studied management flavors
 \end{itemize}
 
 \end{frame}
+\fi
 
 \begin{frame}{Fear or motivation}
 \begin{figure}[h]
@@ -49,14 +59,6 @@ Studied management flavors
 
 \end{frame}
 
-\begin{frame}{Decision Making (part 1)}
-\begin{description}
-\item[Hiring:] technical background, attitude, expectations
-\item[Delegation:] split, prioritize, check candidates, assign
-\item[Salary adjustment:] evaluate, collect feedback, never announce in advance.
-\item[Firing:] no performance, no improvement, no collaboration
-\end{description}
-\end{frame}
 
 \begin{frame}{Decision Making (Slackers) }
 \begin{figure}[h]
@@ -75,13 +77,25 @@ Studied management flavors
   \label{fig:axbgrid}
 \end{figure}
 \end{frame}
-\begin{frame}{Nonacceptance of age or background}
-\begin{itemize}
-\item Young (or unproven) leader \& old team members
-\item ``I know better, I should be your boss''
-\end{itemize}
+
+\begin{frame}{Decision Making (part 2)}
+\begin{description}
+\item[Delegation:] split, prioritize, check candidates, assign
+\item[Hiring:] technical background, attitude, expectations
+\item[Firing:] no performance, no improvement, no collaboration
+\item[Salary adjustment:] evaluate, collect feedback, never announce in advance.
+\end{description}
 \end{frame}
 
+\begin{frame}{Impediments}
+\begin{description}
+\uncover<1->{\item[Ego barrier:] over promoting, avoiding risk/members, not admitting mistakes }
+\uncover<2->{\item[Nonacceptance of age:] ``You are too young to lead!''}
+\uncover<3->{\item[Not addressing problems:] see it, call it, find the cause, feedback}
+\end{description}
+\end{frame}
+
+\iffalse
 \begin{frame}{Ego barrier}
 \begin{itemize}
 \item over promoting the own person
@@ -98,6 +112,7 @@ Studied management flavors
 \item Track and give feedback
 \end{itemize}
 \end{frame}
+\fi
 
 \begin{frame}{Unofficial Coaching}
 \begin{itemize}
@@ -130,7 +145,7 @@ Studied management flavors
 \begin{frame}{Conclusion}
 \begin{itemize}
 \item Be fair, be firm, be honest
-\item Treat causes not effects
+\item Treat causes, not effects
 \item Give advice only when asked
 \item Focus on both people and project
 \end{itemize}
